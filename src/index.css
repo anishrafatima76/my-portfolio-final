@@ -1742,3 +1742,10 @@ body {
   }
 
 }
+html {
+    scroll-behavior: smooth;
+}
+
+#projects {
+    scroll-margin-top: 65px;
+}
