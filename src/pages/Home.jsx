@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 export default function Home() {
     return (
         <div className="home">
@@ -325,9 +326,9 @@ export default function Home() {
                                 <span>CSS</span>
                             </div>
 
-                            <a href="/weatherapp">
-                                View Project <span>→</span>
-                            </a>
+                            <Link to="/weather-app">
+    View Project <span>→</span>
+</Link>
 
                         </div>
 
@@ -373,9 +374,9 @@ export default function Home() {
                                 <span>CSS</span>
                             </div>
 
-                            <a href="/todoapp">
-                                View Project <span>→</span>
-                            </a>
+                            <Link to="/todo-app">
+    View Project <span>→</span>
+</Link>
 
                         </div>
 
@@ -421,9 +422,9 @@ export default function Home() {
                                 <span>JavaScript</span>
                             </div>
 
-                            <a href="/products">
-                                View Project <span>→</span>
-                            </a>
+                            <Link to="/products">
+    View Project <span>→</span>
+</Link>
 
                         </div>
 
