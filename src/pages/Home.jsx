@@ -1,6 +1,12 @@
 
 import { Link } from "react-router-dom";
 export default function Home() {
+    const scrollToSection = (id) => {
+        document.getElementById(id)?.scrollIntoView({
+            behavior: "smooth"
+        });
+}
+    
     return (
         <div className="home">
 
@@ -29,13 +35,19 @@ export default function Home() {
 
                     <div className="hero-buttons">
 
-                        <a href="#projects" className="primary-btn">
-                            View My Work
-                        </a>
+                        <button
+    className="primary-btn"
+    onClick={() => scrollToSection("projects")}
+>
+    View My Work
+</button>
 
-                        <a href="#contact" className="secondary-btn">
-                            Contact Me
-                        </a>
+                        <button
+    className="secondary-btn"
+    onClick={() => scrollToSection("contact")}
+>
+    Contact Me
+</button>
 
                     </div>
 

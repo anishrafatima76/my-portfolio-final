@@ -208,7 +208,8 @@ body {
     margin-top: 32px;
 }
 
-.hero-buttons a {
+.hero-buttons a,
+.hero-buttons button  {
     display: inline-block;
     padding: 13px 26px;
     border-radius: 7px;
@@ -230,7 +231,8 @@ body {
     border: 2px solid #dc143c;
 }
 
-.hero-buttons a:hover {
+.hero-buttons a:hover,
+.hero-buttons button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(220, 20, 60, 0.15);
 }
