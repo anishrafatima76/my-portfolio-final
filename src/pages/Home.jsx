@@ -1,12 +1,12 @@
-
 import { Link } from "react-router-dom";
+
 export default function Home() {
     const scrollToSection = (id) => {
         document.getElementById(id)?.scrollIntoView({
             behavior: "smooth"
         });
-}
-    
+    };
+
     return (
         <div className="home">
 
@@ -36,23 +36,22 @@ export default function Home() {
                     <div className="hero-buttons">
 
                         <button
-    className="primary-btn"
-    onClick={() => scrollToSection("projects")}
->
-    View My Work
-</button>
+                            className="primary-btn"
+                            onClick={() => scrollToSection("projects")}
+                        >
+                            View My Work
+                        </button>
 
                         <button
-    className="secondary-btn"
-    onClick={() => scrollToSection("contact")}
->
-    Contact Me
-</button>
+                            className="secondary-btn"
+                            onClick={() => scrollToSection("contact")}
+                        >
+                            Contact Me
+                        </button>
 
                     </div>
 
                 </div>
-
 
                 <div className="hero-card">
 
@@ -96,7 +95,6 @@ export default function Home() {
                     </h2>
                 </div>
 
-
                 <div className="about-content">
 
                     <div className="about-text">
@@ -116,7 +114,6 @@ export default function Home() {
                         </p>
 
                     </div>
-
 
                     <div className="stats">
 
@@ -154,7 +151,6 @@ export default function Home() {
                     </h2>
                 </div>
 
-
                 <div className="skills-container">
 
                     <div className="skill">
@@ -168,7 +164,6 @@ export default function Home() {
                         </div>
                     </div>
 
-
                     <div className="skill">
                         <div className="skill-info">
                             <span>CSS3</span>
@@ -180,7 +175,6 @@ export default function Home() {
                         </div>
                     </div>
 
-
                     <div className="skill">
                         <div className="skill-info">
                             <span>JavaScript</span>
@@ -191,7 +185,6 @@ export default function Home() {
                             <div className="progress javascript"></div>
                         </div>
                     </div>
-
 
                     <div className="skill">
                         <div className="skill-info">
@@ -221,7 +214,6 @@ export default function Home() {
                     </h2>
                 </div>
 
-
                 <div className="services-container">
 
                     <div className="service-card">
@@ -241,7 +233,6 @@ export default function Home() {
 
                     </div>
 
-
                     <div className="service-card">
 
                         <div className="service-number">
@@ -258,7 +249,6 @@ export default function Home() {
                         </p>
 
                     </div>
-
 
                     <div className="service-card">
 
@@ -295,107 +285,10 @@ export default function Home() {
                     </h2>
                 </div>
 
-
                 <div className="projects-container">
 
 
-                    {/* WEATHER */}
-
-                    <div className="project-card">
-
-                        <div className="project-image weather-image">
-
-                            <div className="project-icon">
-                                🌤️
-                            </div>
-
-                            <span className="project-badge">
-                                REACT
-                            </span>
-
-                        </div>
-
-
-                        <div className="project-content">
-
-                            <p className="project-type">
-                                WEB APPLICATION
-                            </p>
-
-                            <h3>
-                                Weather App
-                            </h3>
-
-                            <p>
-                                A responsive weather application that
-                                fetches real-time weather information
-                                based on the selected city.
-                            </p>
-
-                            <div className="project-tech">
-                                <span>React</span>
-                                <span>API</span>
-                                <span>CSS</span>
-                            </div>
-
-                            <Link to="/weather-app">
-    View Project <span>→</span>
-</Link>
-
-                        </div>
-
-                    </div>
-
-
-                    {/* TODO */}
-
-                    <div className="project-card">
-
-                        <div className="project-image todo-image">
-
-                            <div className="project-icon">
-                                ✓
-                            </div>
-
-                            <span className="project-badge">
-                                REACT
-                            </span>
-
-                        </div>
-
-
-                        <div className="project-content">
-
-                            <p className="project-type">
-                                WEB APPLICATION
-                            </p>
-
-                            <h3>
-                                Todo App
-                            </h3>
-
-                            <p>
-                                A simple and interactive task management
-                                application designed to organize daily
-                                tasks efficiently.
-                            </p>
-
-                            <div className="project-tech">
-                                <span>React</span>
-                                <span>JavaScript</span>
-                                <span>CSS</span>
-                            </div>
-
-                            <Link to="/todo-app">
-    View Project <span>→</span>
-</Link>
-
-                        </div>
-
-                    </div>
-
-
-                    {/* PRODUCT */}
+                    {/* ================= PRODUCT ================= */}
 
                     <div className="project-card">
 
@@ -410,7 +303,6 @@ export default function Home() {
                             </span>
 
                         </div>
-
 
                         <div className="project-content">
 
@@ -435,8 +327,102 @@ export default function Home() {
                             </div>
 
                             <Link to="/products">
-    View Project <span>→</span>
-</Link>
+                                View Project <span>→</span>
+                            </Link>
+
+                        </div>
+
+                    </div>
+
+
+                    {/* ================= WEATHER ================= */}
+
+                    <div className="project-card">
+
+                        <div className="project-image weather-image">
+
+                            <div className="project-icon">
+                                🌤️
+                            </div>
+
+                            <span className="project-badge">
+                                REACT
+                            </span>
+
+                        </div>
+
+                        <div className="project-content">
+
+                            <p className="project-type">
+                                WEB APPLICATION
+                            </p>
+
+                            <h3>
+                                Weather App
+                            </h3>
+
+                            <p>
+                                A responsive weather application that
+                                fetches real-time weather information
+                                based on the selected city.
+                            </p>
+
+                            <div className="project-tech">
+                                <span>React</span>
+                                <span>API</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <Link to="/weather-app">
+                                View Project <span>→</span>
+                            </Link>
+
+                        </div>
+
+                    </div>
+
+
+                    {/* ================= TODO ================= */}
+
+                    <div className="project-card">
+
+                        <div className="project-image todo-image">
+
+                            <div className="project-icon">
+                                ✓
+                            </div>
+
+                            <span className="project-badge">
+                                REACT
+                            </span>
+
+                        </div>
+
+                        <div className="project-content">
+
+                            <p className="project-type">
+                                WEB APPLICATION
+                            </p>
+
+                            <h3>
+                                Todo App
+                            </h3>
+
+                            <p>
+                                A simple and interactive task management
+                                application designed to organize daily
+                                tasks efficiently.
+                            </p>
+
+                            <div className="project-tech">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <Link to="/todo-app">
+                                View Project <span>→</span>
+                            </Link>
 
                         </div>
 
@@ -480,3 +466,5 @@ export default function Home() {
         </div>
     );
 }
+
+
